@@ -79,7 +79,10 @@ export default function Mainpage() {
     }, [selectedMark, marksModels]);
 
     const handlePageChange = (pageNumber) => {
-        setCurrentPage(pageNumber);
+        // Проверка, чтобы не выйти за пределы диапазона страниц
+        if (pageNumber >= 1 && pageNumber <= totalPages) {
+            setCurrentPage(pageNumber);
+        }
     };
 
     const indexOfLastCar = currentPage * carsPerPage;

@@ -15,7 +15,7 @@ class Config:
         self.options = {
             "FastAPI": {
                 "host": "0.0.0.0",
-                "port": 83,
+                "port": 8085,
                 "reload": False
             },
             "mongodb": {
