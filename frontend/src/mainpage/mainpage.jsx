@@ -79,7 +79,6 @@ export default function Mainpage() {
     }, [selectedMark, marksModels]);
 
     const handlePageChange = (pageNumber) => {
-        // Проверка, чтобы не выйти за пределы диапазона страниц
         if (pageNumber >= 1 && pageNumber <= totalPages) {
             setCurrentPage(pageNumber);
         }
@@ -113,7 +112,11 @@ export default function Mainpage() {
                     <ul className="brands">
                         {Object.keys(marksModels).sort().map((mark) => (
                             <li key={mark}>
-                                <a href="#" onClick={() => setSelectedMark(mark)}>
+                                <a
+                                    href="#"
+                                    onClick={() => setSelectedMark(mark)}
+                                    className={selectedMark === mark ? 'active' : ''}
+                                >
                                     {mark}
                                 </a>
                                 <span>{marksModels[mark].length}</span>

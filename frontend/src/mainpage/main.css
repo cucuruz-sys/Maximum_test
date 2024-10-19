@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -78,6 +78,12 @@ th {
   gap: 10px;
 }
 
+.pagination a.active {
+  background-color: #4499ff; /* Зеленый фон для активной страницы */
+  color: white; /* Белый цвет текста */
+  font-weight: bold; /* Жирный текст */
+}
+
 .pagination a {
   text-decoration: none;
   color: #007bff;
@@ -93,4 +99,28 @@ th {
 
 .pagination .prev, .pagination .next {
   font-weight: bold;
+}
+
+.brands a.active {
+  background-color: #4CAF50; /* Зеленый фон для активной вкладки */
+  color: white; /* Белый цвет текста */
+  font-weight: bold; /* Жирный текст */
+  padding: 10px;
+  border-radius: 5px; /* Закругленные углы */
+}
+
+.brands a {
+  text-decoration: none;
+  color: black; /* Черный цвет текста для неактивных вкладок */
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.brands a:hover {
+  background-color: #ddd; /* Фон при наведении */
+}
+
+.brands li {
+  display: inline-block;
+  margin-right: 10px;
 }
