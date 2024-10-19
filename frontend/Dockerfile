@@ -3,6 +3,7 @@ FROM node:16
 RUN mkdir /FRONT
 COPY . /FRONT
 
+
 WORKDIR /FRONT
 RUN npm install
 

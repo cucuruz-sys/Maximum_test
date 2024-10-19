@@ -1,7 +1,0 @@
-uvicorn~=0.28.0
-fastapi~=0.110.0
-fastapi_login
-pymongo~=4.6.2
-python-multipart
-pydantic~=2.6.4
-python-socketio
