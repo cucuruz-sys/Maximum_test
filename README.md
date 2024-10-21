@@ -30,4 +30,5 @@ EXPOSE 83
 CMD ["python3", "."]
 
 
-Настроить в файле config.json адрес сервера бэка и закинуть env c ссылкой на mongo db
+Настроить в файле config.json адрес сервера бэка и закинуть env c ссылкой на mongoDB.
+Ещё в main.py добавить адрес сервера в cors
