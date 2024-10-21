@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1700px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -24,10 +24,13 @@ header {
   list-style: none;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .brands li {
   font-size: 18px;
+  flex: 1 0 auto;
 }
 
 .brands li span {
